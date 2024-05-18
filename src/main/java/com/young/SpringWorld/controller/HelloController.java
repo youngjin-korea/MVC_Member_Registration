@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class HelloController {
+// @Controller가 붙은 HelloController는 스프링 빈으로 관리됨(spring container에 담겨서)
 // 1. 정적파일 내려주기 -> resources/static 폴더에 path 명과 같은 파일명으로 .html 파일 만들어주기
 // 2. template 내려주기 -> mvc 모델로 resources/templates 내의 폴더명이 return문이 되고 controller에서 model에 담아서 값을 넘겨주고 반영하여 template을 내려줌
 // 3. api 내려주기 @GetMapping으로 path를 받았다면 @ResponseBody를 붙혀줌

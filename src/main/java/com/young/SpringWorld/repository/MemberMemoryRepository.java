@@ -1,6 +1,7 @@
 package com.young.SpringWorld.repository;
 
 import com.young.SpringWorld.domain.Member;
+import org.springframework.stereotype.Repository;
 
 import java.util.*;
 
@@ -28,5 +29,9 @@ public class MemberMemoryRepository implements MemberRepository{
     @Override
     public List<Member> findAll() {
         return new ArrayList<>(store.values());
+    }
+
+    public void clearStore() {
+        store.clear();
     }
 }
